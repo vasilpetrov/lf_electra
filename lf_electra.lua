@@ -243,7 +243,7 @@ local function main(args)
         end
 	print(('  %s'..ac.reset..' >>>>>>>>cloning to T5577? -'..ac.yellow..' enter'..ac.reset..' for yes or '..ac.yellow..'n'..ac.reset..' for exit'):format(msg))
         print('  Before confirming the cloning operation, put a blank '..ac.blue..'T5577'..ac.reset..' tag on coil PM3!')
-    local ans = utils.input( ' ')
+        local ans = utils.input( ' ')
         if ans == 'n' then
             core.console('clear')
             print( string.rep('--',39) )
@@ -266,7 +266,7 @@ local function main(args)
     writefile(hi, low)
     core.console('pref set hint --on')
     print( string.rep('--',39) )
-	if count > 0 then
+    if count > 0 then
         print( string.rep('--',39) )
         print(('  TAGs created: '..ac.green..'%s'..ac.reset):format(count))
     end
