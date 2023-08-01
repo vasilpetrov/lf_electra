@@ -264,6 +264,7 @@ local function main(args)
         count = count+1
     end
     writefile(hi, low)
+    core.console('pref set hint --on')
     print( string.rep('--',39) )
 	if count > 0 then
         print( string.rep('--',39) )
