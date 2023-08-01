@@ -114,7 +114,7 @@ end
 function sleep(n)
   os.execute("sleep " .. tonumber(n))
 end
---------------------------------- idearch EM ID
+--------------------------------- idsearch EM ID
 local function id()
     local f = io.open(ID_STATUS, "r")
     for line in f:lines() do
@@ -130,7 +130,7 @@ local function id()
     f:close()
     local hex_hi  = tonumber(t:sub(1, 2), 16)
     local hex_low = tonumber(t:sub(3, 10), 16)
-	return hex_hi, hex_low
+    return hex_hi, hex_low
 end
 ---------------------------------------read file
 local function readfile()
