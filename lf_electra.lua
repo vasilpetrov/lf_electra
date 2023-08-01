@@ -3,7 +3,6 @@ local utils = require('utils')
 local ac = require('ansicolors')
 local os = require('os')
 local count = 0
-
 line = '-------------------------------------------------------------------------'
 mod = "                   ELECTRA or EM410x fob cloning SCRIPT "
 version = "                   v1.1.14  01/08/2023 made by jareckib "
@@ -81,13 +80,12 @@ end
 local function timer(n)
     while n > 0 do
         io.write(">>>>> "..ac.yellow.. tonumber(n)..ac.reset.." seconds...\r")
-        --print("Sleeping for ".. tonumber(n) .." seconds...")
         os.execute("ping -n 2 localhost > nul")
         io.flush()
         n = n-1
     end
 end
--- -------------------------------------------------- help
+----------------------------------------------------- help
 local function help()
     core.console('clear')
     print(line)
@@ -109,10 +107,6 @@ local function exitMsg(msg)
     print( string.rep('--',39) )
     print(msg)
     print()
-end
------------------------------------------- sleep
-function sleep(n)
-  os.execute("sleep " .. tonumber(n))
 end
 --------------------------------- idsearch EM ID
 local function id()
