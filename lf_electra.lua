@@ -76,11 +76,15 @@ local function oops(err)
     core.clearCommandBuffer()
     return nil, err
 end
+-----------------------------------------------sleep
+local function sleep(n)
+    os.execute("sleep " ..tonumber(n))
+end
 ----------------------------------------------time wait
 local function timer(n)
     while n > 0 do
         io.write(">>>>> "..ac.yellow.. tonumber(n)..ac.reset.." seconds...\r")
-        os.execute("ping -n 2 localhost > nul")
+        sleep(1)
         io.flush()
         n = n-1
     end
