@@ -251,6 +251,7 @@ local function main(args)
         print('  Before confirming the cloning operation, put a blank '..ac.cyan..'T5577'..ac.reset..' tag on coil PM3!')
         local ans = utils.input(ac.cyan..' ')
         if ans == 'n' then
+            print(ac.reset..'')
             core.console('clear')
             print( string.rep('--',39) )
             print(ac.yellow..'                                  USER ABORTED'..ac.reset)
