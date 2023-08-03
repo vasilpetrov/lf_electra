@@ -215,8 +215,10 @@ local function main(args)
         print( string.rep('--',39) )
         print( string.rep('--',39) )
     end
-    if emarine or id_original then    
+    if emarine or id_original then
+       print(ac.yellow..'')
        os.execute("PAUSE")
+       print(ac.reset..'')
        print('')
        print('    Readed TAG ID: ')
        core.console('lf em 410x read')
@@ -256,6 +258,7 @@ local function main(args)
             break
         end
         core.console('clear')
+        print(ac.reset..'')
         print( string.rep('--',39) )
         if emarine then
             core.console( ('lf em 410x clone --id %02X%08X'):format(hi, low) )
