@@ -82,6 +82,7 @@ local function sleep(n)
 end
 ----------------------------------------------time wait
 local function timer(n)
+print( string.rep('--',39) )
     while n > 0 do
         io.write(ac.cyan..">>>>> "..ac.yellow.. tonumber(n)..ac.cyan.." seconds...\r"..ac.reset)
         sleep(1)
