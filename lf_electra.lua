@@ -15,7 +15,6 @@ desc = [[
    from input, EM410X ID ---> option "-s". Next option for cloning simple 
    EM4102 ---> option "-m". If press  <enter> it,  which writes an ID. 
    If press <n> ---> exit the script.
- ------------------------------------------------------------------------
 ]]
 example = [[
 -------------------------------------------------------------------------------
