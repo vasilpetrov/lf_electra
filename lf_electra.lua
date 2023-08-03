@@ -5,7 +5,7 @@ local os = require('os')
 local count = 0
 line = '-------------------------------------------------------------------------'
 mod = "                   ELECTRA or EM410x fob cloning SCRIPT "
-version = "                   v1.1.14  01/08/2023 made by jareckib "
+version = "               v1.1.14  01/08/2023 made by Jarek Barwinski "
 desc = [[
 
    Cloning new ELECTRA tags or EM410x to T5577 tag. This script changes 
